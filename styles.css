@@ -33,19 +33,20 @@ body {
     padding: 20px 40px;
     font-size: 1.5rem;
     cursor: pointer;
-    margin: 10px auto;
+    margin: 10px auto 30px; /* タップボタンの下に余白を追加 */
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
 }
 
 #resetButton {
-    padding: 10px 20px;
-    font-size: 1.2rem;
+    padding: 20px 40px; /* タップボタンと同じサイズに調整 */
+    font-size: 1.5rem;
     cursor: pointer;
-    margin: 10px auto;
+    margin: 20px auto; /* タップボタンの下に余白を追加 */
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
 }
+
 
