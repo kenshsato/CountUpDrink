@@ -43,5 +43,5 @@ button {
     left: 50%;
     transform: translateX(-50%); /* 水平方向に中央揃え */
     font-size: 2rem; /* テキストのサイズを大きく調整 */
-    color: red; /* テキストの色を赤に設定 */
+    color: black; /* テキストの色を黒に設定 */
 }
