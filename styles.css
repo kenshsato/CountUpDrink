@@ -18,7 +18,7 @@ body {
 }
 
 button {
-    padding: 20px 40px; /* タップボタンのサイズを大きく調整 */
+    padding: 50px 10px; /* タップボタンのサイズを大きく調整 */
     font-size: 1.5rem;
     cursor: pointer;
     display: block;
@@ -28,6 +28,6 @@ button {
 }
 
 #resetButton {
-    padding: 10px 20px; /* もう一度遊ぶボタンのサイズを小さく調整 */
+    padding: 20px 40px; /* もう一度遊ぶボタンのサイズを小さく調整 */
     font-size: 1.2rem;
 }
