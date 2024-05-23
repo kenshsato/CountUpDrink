@@ -40,11 +40,12 @@ body {
 }
 
 #resetButton {
-    padding: 20px 40px;
+    padding: 10px 20px;
     font-size: 1.2rem;
-    position: absolute;
-    bottom: 20px; /* 画面下部により下に配置 */
-    left: 50%;
-    transform: translateX(-50%); /* 水平方向に中央揃え */
+    cursor: pointer;
+    margin: 10px auto;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    display: block;
 }
 
