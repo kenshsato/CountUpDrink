@@ -20,7 +20,6 @@ tapButton.addEventListener('touchstart', (e) => {
     counterElement.textContent = count;
 
     if (count === explosionNumber) {
-        messageElement.textContent = '飲め';
         messageElement.style.visibility = 'visible'; // メッセージを表示
         tapButton.disabled = true; // タップボタンを無効化
         resetButton.style.display = 'block'; // リセットボタンを表示
