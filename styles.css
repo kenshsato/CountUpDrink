@@ -10,6 +10,7 @@ body {
 
 #app {
     text-align: center;
+    position: relative; /* 相対位置指定 */
 }
 
 #counter {
@@ -28,6 +29,19 @@ button {
 }
 
 #resetButton {
-    padding: 10px 20px; /* もう一度遊ぶボタンのサイズを小さく調整 */
+    padding: 10px 20px; /* リセットボタンのサイズを小さく調整 */
     font-size: 1.2rem;
+    position: absolute; /* 絶対位置指定 */
+    bottom: 20px; /* 下部に配置 */
+    left: 50%;
+    transform: translateX(-50%); /* 水平方向に中央揃え */
+}
+
+#message {
+    position: absolute; /* 絶対位置指定 */
+    top: calc(50% - 120px); /* カウンターの真上に配置 */
+    left: 50%;
+    transform: translateX(-50%); /* 水平方向に中央揃え */
+    font-size: 2rem; /* テキストのサイズを大きく調整 */
+    color: red; /* テキストの色を赤に設定 */
 }
