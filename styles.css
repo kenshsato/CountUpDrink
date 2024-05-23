@@ -1,3 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
 .container {
     text-align: center;
     position: relative;
@@ -5,20 +15,17 @@
 
 .counter {
     font-size: 5rem;
-    margin: 20px 0; /* 上部と下部に余白を追加 */
-    position: absolute;
-    top: 50%; /* 上下方向の中央揃え */
-    left: 50%;
-    transform: translate(-50%, -50%); /* 水平方向と垂直方向の中央揃え */
+    margin: 0;
+    margin-bottom: 10px; /* 数字の下部に余白を追加 */
 }
 
 .message {
     font-size: 1.2rem;
     color: black;
     position: absolute;
-    top: calc(50% - 90px); /* 数字の上に配置 */
+    top: 50%; /* 数字の中央に配置 */
     left: 50%;
-    transform: translateX(-50%); /* 水平方向に中央揃え */
+    transform: translate(-50%, -70%); /* 数字の上方に配置 */
     visibility: hidden; /* 初期状態では非表示 */
 }
 
@@ -26,15 +33,15 @@
     padding: 20px 40px;
     font-size: 1.5rem;
     cursor: pointer;
-    margin: 10px auto; /* 上部と下部に余白を追加 */
+    margin: 10px auto;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     display: block;
 }
 
-#tapButton, #resetButton {
+#resetButton {
     position: absolute;
-    bottom: 20px; /* 画面下部に配置 */
+    bottom: 10px; /* 画面下部に配置 */
     left: 50%;
     transform: translateX(-50%); /* 水平方向に中央揃え */
 }
