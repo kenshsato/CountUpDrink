@@ -28,14 +28,16 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+#tapButton:disabled {
+    background-color: #d3d3d3; /* グレーアウト */
+    cursor: not-allowed; /* カーソルを変更 */
+}
+
 #resetButton {
     padding: 20px 40px; /* リセットボタンのサイズをタップボタンと同じに調整 */
     font-size: 1.5rem; /* フォントサイズをタップボタンと一致させる */
     margin-top: 20px; /* タップボタンとの間に余白を追加 */
-    position: absolute; /* 絶対位置指定 */
-    bottom: 20px; /* 下部に配置 */
-    left: 50%;
-    transform: translateX(-50%); /* 水平方向に中央揃え */
+    display: none; /* 初期状態では非表示 */
 }
 
 #message {
