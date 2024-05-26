@@ -24,6 +24,7 @@ tapButton.addEventListener('touchstart', (e) => {
         if (count === explosionNumber) {
             messageElement.style.visibility = 'visible'; // メッセージを表示
             isExploded = true; // 爆発フラグを設定
+            tapButton.disabled = true; // タップボタンを無効化
             resetButton.style.display = 'block'; // リセットボタンを表示
         }
     }
@@ -44,10 +45,13 @@ resetButton.addEventListener('click', () => {
     // 爆発フラグをリセット
     isExploded = false;
 
+    // タップボタンを有効化
+    tapButton.disabled = false;
+
     // リセットボタンを非表示
     resetButton.style.display = 'none';
 });
-  
+
 // 爆発数を生成する関数
 function generateExplosionNumber() {
     return Math.floor(Math.random() * 120) + 1;
