@@ -1,7 +1,6 @@
 // 初期設定
 let count = 0;
 let explosionNumber = generateExplosionNumber(); // 初回の爆発数を設定
-let isExploded = false; // 爆発フラグを追加
 
 // DOM要素の取得
 const counterElement = document.getElementById('counter');
@@ -17,16 +16,13 @@ document.addEventListener('gesturestart', (e) => {
 // タッチイベントを利用して連打を改善
 tapButton.addEventListener('touchstart', (e) => {
     e.preventDefault(); // タッチイベントのデフォルト動作を防止
-    if (!isExploded) { // 爆発していない場合にカウントを増加
-        count++;
-        counterElement.textContent = count;
+    count++;
+    counterElement.textContent = count;
 
-        if (count === explosionNumber) {
-            messageElement.style.visibility = 'visible'; // メッセージを表示
-            isExploded = true; // 爆発フラグを設定
-            tapButton.disabled = true; // タップボタンを無効化
-            resetButton.style.display = 'block'; // リセットボタンを表示
-        }
+    if (count === explosionNumber) {
+        messageElement.style.visibility = 'visible'; // メッセージを表示
+        tapButton.disabled = true; // タップボタンを無効化
+        resetButton.style.display = 'block'; // リセットボタンを表示
     }
 });
 
@@ -42,10 +38,7 @@ resetButton.addEventListener('click', () => {
     // メッセージを非表示
     messageElement.style.visibility = 'hidden';
 
-    // 爆発フラグをリセット
-    isExploded = false;
-
-    // タップボタンを有効化
+    // ボタンを再有効化
     tapButton.disabled = false;
 
     // リセットボタンを非表示
