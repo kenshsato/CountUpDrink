@@ -20,7 +20,7 @@ body {
 }
 
 .button {
-    padding: 50px 100px;
+    padding: 10px 20px;
     font-size: 1.5rem;
     cursor: pointer;
     margin: 10px auto;
@@ -34,7 +34,8 @@ body {
     bottom: 20px; /* 下部に配置 */
     left: 50%;
     transform: translateX(-50%); /* 水平方向に中央揃え */
-    padding: 20px 40px; /* リセットボタンのサイズを調整 */
+    padding: 15px 30px; /* リセットボタンのサイズを調整 */
+    writing-mode: horizontal-tb; /* テキストの横書き指定 */
 }
 
 #message {
