@@ -1,7 +1,7 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* 上部に寄せる */
+    align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -9,21 +9,12 @@ body {
     touch-action: manipulation; /* 追加 */
 }
 
-#app {
+.container {
     text-align: center;
-    width: 100%; /* 全体の幅を100%に設定 */
-    position: relative;
-    top: 10%; /* ページ上部からの距離を固定 */
+    position: relative; /* 相対位置指定 */
 }
 
-.message {
-    font-size: 2rem;
-    color: black;
-    margin-bottom: 10px; /* 数字と「飲め」テキストの間に余白を追加 */
-    visibility: hidden; /* 初期状態では非表示 */
-}
-
-.counter {
+#counter {
     font-size: 5rem;
     margin: 20px 0;
 }
@@ -32,9 +23,9 @@ body {
     padding: 20px 40px;
     font-size: 1.5rem;
     cursor: pointer;
+    margin: 10px auto;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    margin: 10px 0;
 }
 
 #resetButton {
@@ -45,4 +36,11 @@ body {
     bottom: 20px; /* 下部に配置 */
     left: 50%;
     transform: translateX(-50%); /* 水平方向に中央揃え */
+}
+
+#message {
+    font-size: 2rem; /* テキストのサイズを大きく調整 */
+    color: black; /* テキストの色を黒に設定 */
+    margin-bottom: 10px; /* 数字と「飲め」テキストの間に余白を追加 */
+    visibility: hidden; /* 初期状態では非表示 */
 }
