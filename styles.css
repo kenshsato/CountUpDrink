@@ -49,4 +49,5 @@ body {
 #tapButton:disabled {
     background-color: #d3d3d3; /* グレーアウト */
     cursor: not-allowed; /* カーソルを変更 */
+    pointer-events: none; /* クリックイベントを無効化 */
 }
