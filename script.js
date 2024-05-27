@@ -47,5 +47,5 @@ resetButton.addEventListener('click', () => {
 
 // 爆発数を生成する関数
 function generateExplosionNumber() {
-    return Math.floor(Math.random() * 120) + 1;
+    return Math.floor(Math.random() * 100) + 1;
 }
