@@ -16,13 +16,15 @@ document.addEventListener('gesturestart', (e) => {
 // タッチイベントを利用して連打を改善
 tapButton.addEventListener('touchstart', (e) => {
     e.preventDefault(); // タッチイベントのデフォルト動作を防止
-    count++;
-    counterElement.textContent = count;
+    if (!tapButton.disabled) { // ボタンが有効な場合にカウントを増加
+        count++;
+        counterElement.textContent = count;
 
-    if (count === explosionNumber) {
-        messageElement.style.visibility = 'visible'; // メッセージを表示
-        tapButton.disabled = true; // タップボタンを無効化
-        resetButton.style.display = 'block'; // リセットボタンを表示
+        if (count === explosionNumber) {
+            messageElement.style.visibility = 'visible'; // メッセージを表示
+            tapButton.disabled = true; // タップボタンを無効化
+            resetButton.style.display = 'block'; // リセットボタンを表示
+        }
     }
 });
 
