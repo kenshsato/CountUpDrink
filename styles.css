@@ -16,7 +16,7 @@ body {
     text-align: center;
     height: 100%;
     justify-content: flex-start; /* 画面上部に配置 */
-    padding-top: 50px; /* ページトップからの距離 */
+    padding-top: 80px; /* ページトップからの距離 */
 }
 
 .message {
